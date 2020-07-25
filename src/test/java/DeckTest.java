@@ -8,11 +8,15 @@ public class DeckTest {
     private Deck deck;
     private SuitType suits;
     private RankType ranks;
+    private Player player;
 
     @Before
     public void before(){
+
         this.deck = new Deck();
+        this.player = new Player();
     }
+
 
     @Test
     public void deckStartsEmpty(){
@@ -38,8 +42,8 @@ public class DeckTest {
     public void deckCanBeDealtToHand(){
         deck.makeDeckOfCards(suits, ranks);
         deck.shuffleDeck();
-        deck.dealCard();
+        deck.dealCard(player);
         assertEquals(51, deck.checkAmount());
-        assertEquals(1, deck.checkHand());
+        assertEquals(1, player.checkHand());
     }
 }

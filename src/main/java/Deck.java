@@ -59,7 +59,9 @@ public class Deck {
         else {
             return player2;
         }
+        return null;
     }
+
 
 
 }

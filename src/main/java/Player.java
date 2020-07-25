@@ -13,11 +13,15 @@ public class Player {
     }
 
     public int countRank() {
-        int total;
+        int total = 0;
         for (PlayingCard card : this.hand) {
             total += card.getRank().getRankType();
         }
         return total;
+    }
+
+    public int checkHand(){
+        return this.hand.size();
     }
 
 }

@@ -1,3 +1,5 @@
+import org.junit.Before;
+
 public class PlayerTest {
 
     private Player player1;
