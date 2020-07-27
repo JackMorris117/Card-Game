@@ -8,8 +8,8 @@ public class PlayerTest {
 
     @Before
     public void before(){
-        this.player1 = new Player();
-        this.player2 = new Player();
+        this.player1 = new Player("John");
+        this.player2 = new Player("Michael");
         this.deck = new Deck();
     }
 

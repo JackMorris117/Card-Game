@@ -3,9 +3,12 @@ import java.util.ArrayList;
 public class Player {
 
     private ArrayList<PlayingCard> hand;
+    private String name;
 
-    public Player(){
+    public Player(String name){
+
         this.hand = new ArrayList<PlayingCard>();
+        this.name = name;
     }
 
     public void takeCard(PlayingCard card) {
